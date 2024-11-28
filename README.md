@@ -1,1 +1,2 @@
 # gyorkerekpar
+reade file
