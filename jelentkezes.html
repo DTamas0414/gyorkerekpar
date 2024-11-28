@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dudás Tamás">
+    <meta name="copyright" content="Tájékozató célokra">
+    <meta name="description" content="A jelentkezés oldalon jelentkezhetsz a kerékpártúrákra">
+    <title>Jelentkezésp</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="gyorkerekpar.css">
+    <script src="gyorkerekpar.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="elemek/logo.png" alt="kerékpár logo">
+        <p>Győri Kerékpáros Túraklub</p>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="kezdolap.html">Kezdőlap</a></li>
+            <li><a href="utvonalak.html">Útvonalak</a></li>
+            <li><a href="turak.html">Túrák</a></li>
+            <li><a href="galeria.html">Galéria</a></li>
+            <li><a href="rolunk.html">Rólunk</a></li>
+        </ul>
+    </nav>
+    <h2>Jelentkezés</h2>
+    <form class="elem" method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php">
+        <label>Teljes név: <input type="text" name="nev" maxlength="30" size="30" placeholder="Dudás Tamás" required></label><br>
+        <label>Életkor: <input type="number" name="kor" min="16" size="5" placeholder="korhatár: 16 év" required></label><br>
+        <label>Nem: <select name="nem"><option value="0">Férfi</option><option value="1">Nő</option></select></label><br>
+        <label>Telefonszám: <input type="tel" name="tel" size="15" placeholder="+36123456789" required></label><br>
+        <label>E-mail cím: <input type="email" name="email" size="30 "placeholder="email@gmail.com" required></label><br>
+        <label>Kerékpárod mérete: <input type="number" name="meret" min="14" max="24" step="2" value="20">"</label><br>
+        Szeretnél felszerelést bérelni?<br>
+        <label>&emsp;Bukósisak <input type="checkbox" name="sisak"></label><br>
+        <label>&emsp;Szemüveg <input type="checkbox" name="sisak"></label><br>
+        <label>&emsp;Láthatósági mellény <input type="checkbox" name="sisak"></label><br>
+        Az egész túrán részt veszel?<br>
+        <label>&emsp;Igen <input type="radio" name="odavissza" checked></label><br>
+        <label>&emsp;Csak oda <input type="radio" name="odavissza"></label><br>
+        <label>&emsp;Csak vissza <input type="radio" name="odavissza"></label><br>
+        <label>Megjegyzés:<br><textarea name="megjegyzes" rows="5" cols="30" placeholder="Útközben szeretnék megállni a..."></textarea></label><br>
+        <input type="reset"><br>
+        <input type="submit">
+
+    </form>
+        <footer>
+            <p>Tanulmányi célokra</p>
+        </footer>
+        </div>
+</body>
+
+</html>
