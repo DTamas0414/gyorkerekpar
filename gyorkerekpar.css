@@ -22,23 +22,21 @@ h1 {
 }
 
 .tekerjgyor1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin: 50px 10px 10px auto;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: megjelenes 1s forwards;
     animation-delay: 0.2s;
 }
 
 .tekerjgyor2 {
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin: 10px 10px 100px auto;
     line-height: 1;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: megjelenes 1s forwards;
     animation-delay: 1s;
 }
 
-@keyframes fadeIn {
+@keyframes megjelenes {
     0% {
         opacity: 0;
     }
@@ -214,7 +212,7 @@ article {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 50px 20px;
+    margin: 50px 10px;
 }
 
 .aktualitasok li {
@@ -261,7 +259,7 @@ article {
 
 .arrow {
     width: 30px;
-    animation: bounce 1.5s infinite;
+    animation: pattogas 2s infinite;
 }
 
 .gorgetes {
@@ -271,10 +269,10 @@ article {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    transition: opacity 2s ease-out;
+    transition: 2s ease-out;
 }
 
-@keyframes bounce {
+@keyframes pattogas {
 
     0%,
     100% {
@@ -290,6 +288,7 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #F2E9E4;
     padding: 10px;
     border-radius: 40px;
@@ -299,14 +298,24 @@ article {
 }
 
 .valasztas {
-    background-color: none;
+    padding: 5px;
+    background-color: #F2E9E4;
+    width: max-content;
+    height: max-content;
+    border: solid 5px #C9ADA7;
+    border-radius: 40px;
+}
+
+.valasztas h3 {
+    margin: auto;
 }
 
 .elem {
     padding: 10px;
-    margin: 10px;
+    margin: 20px 10px;
     background-color: #F2E9E4;
     border-radius: 10px;
+    border: solid 10px #C9ADA7;
 }
 
 hr {
@@ -366,4 +375,36 @@ footer p {
     font-size: 14px;
     color: white;
     margin: 0 20px;
+}
+
+.rovid {
+    position: absolute;
+    bottom: 0;
+}
+
+label.error {
+    color: red;
+    font-weight: bold;
+}
+
+.inputnumber {
+    width: 50px;
+}
+
+input {
+    padding: 2px;
+    background-color: #F2E9E4;
+    border: solid 2px #C9ADA7;
+    border-radius: 5px;
+}
+
+.egyebinput {
+    padding: 2px;
+    background-color: #F2E9E4;
+    border: solid 2px #C9ADA7;
+    border-radius: 5px;
+}
+
+form p {
+    margin: 8px;
 }
